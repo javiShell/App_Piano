@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Piano';
+  play = false;
 
   aplicarSonido(numero: number): void {
 
@@ -16,4 +17,13 @@ export class AppComponent {
     audio.play();
 
   }
+
+  tocar(): void {
+    this.play = true;
+  }
+
+  parar(): void {
+    this.play = false;
+  }
+
 }

@@ -1,5 +1,20 @@
-<div class="row">
-  <div class="col-lg-6">
+<div class="img">
+<h2 class="alert alert-primary" role="alert" style="text-align: center;">Piano Online</h2>
+<br>
+<br>
+
+<div  class="alert alert-primary" role="alert">
+<div class="mensaje" style="text-align: center;">
+<p>Empieza a crear tus propias melodias pulsando las teclas virtuales</p> 
+<button type="button" class="btn btn-success" style="margin: 15px;" (click)="tocar()">Play</button>
+<button type="button" class="btn btn-danger" (click)="parar()">Stop</button>
+</div>
+</div>
+<br>
+<br>
+
+<div *ngIf="play" class="row">
+  <div class="col-lg-4">
 <div class="list-group">
     <a  (click)="aplicarSonido(1)" class="list-group-item list-group-item-action" style="background-color: red"></a>
     <a  (click)="aplicarSonido(2)" class="list-group-item list-group-item-action" style="background-color: orange"></a>
@@ -8,7 +23,7 @@
     <a  (click)="aplicarSonido(5)" class="list-group-item list-group-item-action" style="background-color: pink"></a>
     <a  (click)="aplicarSonido(6)" class="list-group-item list-group-item-action" style="background-color: purple"></a>
     <a  (click)="aplicarSonido(7)" class="list-group-item list-group-item-action" style="background-color: turquoise"></a>
-    
 </div>
   </div>
+</div>
 </div>
