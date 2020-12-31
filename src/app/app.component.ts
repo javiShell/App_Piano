@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Piano';
   play = false;
-  ver = true;
-  grabar = false;
+  
+  
 
   aplicarSonido(numero: number): void {
 
@@ -22,14 +22,14 @@ export class AppComponent {
 
   tocar(): void {
     this.play = true;
-    this.ver = false;
-    this.grabar = true;
+    
+    
   }
 
   parar(): void {
     this.play = false;
-    this.ver = true;
-    this.grabar = false;
+    
+    
   }
 
 }
