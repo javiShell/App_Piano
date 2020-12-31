@@ -26,6 +26,16 @@
 </div>
   </div>
 </div>
+<div *ngIf="grabar" class="grabacion">
+<div  class="alert alert-dark" role="alert">
+  <div class="mensaje" style="text-align: center;">
+  <p>Empieza a grabar la melodía</p> 
+  <button type="button" id="empezar" class="btn btn-success" style="margin: 15px;" (click)="tocar()">grabar</button>
+  <audio controls></audio>
+  <button type="button" class="btn btn-danger" (click)="parar()">parar</button>
+  </div>
+  </div>
+</div>
 
 <div  *ngIf="ver" class="alert alert-dark" role="alert">
 <div class="mensaje" style="text-align: center;">

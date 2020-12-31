@@ -35,3 +35,13 @@
   
 
 }
+
+.grabacion {
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+    
+}
